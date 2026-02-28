@@ -1,0 +1,19 @@
+# julianit.me — registered sites
+# Each [sites.NAME] stanza defines a subdomain deployment.
+
+[caddy]
+service = "julianit-caddy"
+conf_dir = "/etc/caddy/conf.d"
+
+[sites.senryaku]
+repo = "/home/agent/projects/dojo/senryaku"
+subdomain = "senryaku.julianit.me"
+service = "senryaku"
+port = 8000
+
+[sites.metaforge]
+repo = "/home/agent/projects/metaforge/.worktrees/feat--second-order-graph"
+subdomain = "metaforge.julianit.me"
+service = "metaforge-api"
+port = 8080
+caddy_template = "metaforge"

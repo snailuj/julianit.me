@@ -1,0 +1,19 @@
+metaforge.julianit.me {
+    handle /thesaurus/* {
+        reverse_proxy 127.0.0.1:{{PORT}}
+    }
+    handle /forge/* {
+        reverse_proxy 127.0.0.1:{{PORT}}
+    }
+    handle /strings/* {
+        reverse_proxy 127.0.0.1:{{PORT}}
+    }
+    handle /health {
+        reverse_proxy 127.0.0.1:{{PORT}}
+    }
+    handle {
+        root * {{REPO}}/web/dist
+        try_files {path} /index.html
+        file_server
+    }
+}

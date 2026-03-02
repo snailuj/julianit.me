@@ -11,6 +11,18 @@ subdomain = "senryaku.julianit.me"
 service = "senryaku"
 port = 8000
 
+[sites.kagami]
+repo = "/home/agent/projects/dojo/kagami"
+subdomain = "kagami.julianit.me"
+service = "kagami"
+port = 8001
+
+[sites.ronin]
+repo = "/home/agent/projects/dojo/ronin"
+subdomain = "ronin.julianit.me"
+service = "ronin"
+port = 8002
+
 [sites.metaforge]
 repo = "/home/agent/projects/metaforge/.worktrees/feat--second-order-graph"
 subdomain = "metaforge.julianit.me"

@@ -5,6 +5,12 @@
 service = "julianit-caddy"
 conf_dir = "/etc/caddy/conf.d"
 
+[sites.portal]
+repo = "/home/agent/projects/dojo/portal"
+subdomain = "dojo.julianit.me"
+service = "dojo-portal"
+port = 8003
+
 [sites.senryaku]
 repo = "/home/agent/projects/dojo/senryaku"
 subdomain = "senryaku.julianit.me"
